@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ez-clang C++ REPL for low-resource embedded devices</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    margin: 0;
+    color: #1A1818;
+    background: linear-gradient(135deg, #FFFFFF, #DFDFDF, #DFDFDF, #DFDFDF, #DFDFDF);
+  }
+  div.page-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px 100px;
+  }
+  div.left-top {
+    width: 50%;
+    padding-right: 100px;
+  }
+  img.ez-clang-heading {
+    width: 583px;
+    height: 117px;
+    margin-left: -100px;
+  }
+  div.left-bottom {
+    width: 50%;
+  }
+  div.left-bottom > div {
+    margin: 40px 0;
+  }
+  div.right {
+    width: calc(50% - 100px);
+  }
+  div.right > img {
+    width: 100%;
+    height: auto;
+  }
+  div.keywords-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  div.keywords-container > div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 32px;
+    margin: 0 20px 20px 0;
+    color: #FFFFFF;
+    background: #36A15C;
+    border-radius: 42px;
+  }
+  div.subscribe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 32px;
+    color: #FFFFFF;
+    background: #0089EC;
+    border-radius: 42px;
+  }
+  div.contact-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: left;
+  }
+  div.contact-container > img {
+    width: 128px;
+    height: 128px;
+    margin-right: 25px;
+    border-radius: 64px;
+  }
+</style>
+<body>
+  <div class="page-container">
+    <div class="left-top">
+      <img src="img/ez-clang.png" alt="ez-clang" class="ez-clang-heading">
+      <p>
+        Clang-based cross-compiler with an LLVM remote-JIT backend targeting low-resource embedded devices
+      </p>
+      <div class="keywords-container">
+        <div>Standard C++</div>
+        <div>Native JIT</div>
+        <div>4kb Device Firmware</div>
+        <div>Quick Setup</div>
+      </div>
+    </div>
+    <div class="right">
+      <img src="img/video-preview-01.jpg" alt="video-preview-01">
+      <img src="img/video-preview-05.jpg" alt="video-preview-05">
+    </div>
+    <div class="left-bottom">
+      <div class="links">
+        <a href="https://github.com/echtzeit-dev/ez-clang">https://github.com/echtzeit-dev/ez-clang</a>
+        <a href="https://hub.docker.com/u/echtzeit/ez-clang">https://hub.docker.com/u/echtzeit/ez-clang</a>
+      </div>
+      <div class="subscribe">
+        Subscribe to monthly updates
+      </div>
+      <div class="contact-container">
+        <img src="img/contact-sgraenitz.jpg" alt="contact-sgraenitz">
+        <p>
+          Contact: Stefan Gränitz<br>
+          <a href="https://weliveindetail.github.io/blog/about/">https://weliveindetail.github.io/blog/about/</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
