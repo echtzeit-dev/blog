@@ -16,7 +16,7 @@ a:active {
 }
 body {
   margin: 0;
-  padding: 2% 4% 2% 8%;
+  padding: 0;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -34,6 +34,7 @@ div.page-grid {
   grid-template-columns: calc(50% - 50px) calc(50% - 50px);
   grid-column-gap: 8%;
   grid-row-gap: 1em;
+  padding: 2% 4% 0 8%;
 }
 img.ez-clang-heading {
   width: 122%;
@@ -42,7 +43,8 @@ img.ez-clang-heading {
 div.cell-previews {
   grid-area: 1 / 2 / span 5 / span 1;
 }
-div.cell-previews > img {
+div.cell-previews > video {
+  cursor: pointer;
   width: 100%;
   height: auto;
   margin-bottom: 8%;
@@ -122,7 +124,6 @@ img.icon {
 @media only screen and (max-width: 800px) {
   body {
     font-size: calc(min(4vw - 10%, 20px));
-    padding: 2%;
     background:
     linear-gradient(315deg, #AFAFAF, transparent 25%) no-repeat,
     linear-gradient(225deg, #FFFFFF, transparent 15%) no-repeat,
