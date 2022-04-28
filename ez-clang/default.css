@@ -35,6 +35,7 @@ div.page-grid {
   grid-column-gap: 8%;
   grid-row-gap: 1em;
   padding: 2% 4% 0 8%;
+  max-width: 1200px;
 }
 img.ez-clang-heading {
   width: 122%;
@@ -47,7 +48,26 @@ div.cell-previews > video {
   cursor: pointer;
   width: 100%;
   height: auto;
-  margin-bottom: 8%;
+}
+div.cell-previews > div {
+  margin-bottom: 6%;
+  text-align: right;
+  font-size: 0.75em;
+  color: #888888;
+}
+div.cell-previews a:link {
+  color: #888888;
+  text-decoration: underline;
+}
+div.cell-previews a:visited {
+  color: #888888;
+  text-decoration: underline;
+}
+div.cell-previews a:hover {
+  color: #888888;
+}
+div.cell-previews a:active {
+  color: #888888;
 }
 div.cell-links > a {
   display: flex;
