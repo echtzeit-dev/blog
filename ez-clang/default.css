@@ -132,6 +132,7 @@ img.icon {
   }
   div.page-grid {
     grid-template-columns: 100%;
+    padding: 2% 4%;
   }
   div.cell-top > div {
     text-align: center;
