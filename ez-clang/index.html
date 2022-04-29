@@ -10,6 +10,9 @@
   <link href="default.css" rel="stylesheet">
 </head>
 <body>
+  <div id="bar-notify">
+    Thanks for subscribing!
+  </div>
   <div class="page-grid">
     <div class="cell-top">
       <img src="img/ez-clang.png" alt="ez-clang" class="ez-clang-heading">
@@ -52,7 +55,7 @@
       </a>
     </div>
     <div class="cell-subscribe">
-      <a href="https://1f5cb83c.sibforms.com/serve/MUIEAF_c9iAz87QE8N2oXwzg52zf6EqaJva_SXDlqB7g0bBewqV5gYrvilYB55aO4YJDnLTyHcWYZb5QAhiXtPMKFQ55_2WGLHhSN8kQWE-b5l0DSTEsJU06-_aTfUDFaFPkYxQKyNbudfOp_s8PgjJB5XmG-gzNEhH6fR5dR0YPmLrVx7QC4TbIEl3blE_Xl7vAusKmMDw3gGpu">
+      <a href="https://1f5cb83c.sibforms.com/serve/MUIEANepS0UzFFV4lyMn5putKyhZ95-egftuwmhwVkDgcnRTpvJAjwsBEyyiOnCA2z8tFstbNyHbLZyWOkBvLBLfUdmbB3AJvqZdwKzUmqn56gYgH0R0Mn8ximaE5uaT0iBsnvwWcY4KAR-l97FFanuALmt9GE359OafqJ6T24ZvmsZG-ttcjJ9Yb0BgzEECgEE9rlK8pbD0tRTV">
         <img src="img/mail.png" class="icon" alt="mail">
         Subscribe to monthly updates
       </a>
@@ -65,5 +68,16 @@
       </div>
     </div>
   </div>
+  <script>
+    const regex = /[?&]([^=#]+)=([^&#]*)/g;
+    let params = {};
+    let match;
+    while(match = regex.exec(window.location.href)) {
+      params[match[1]] = match[2];
+    }
+    if (params.hasOwnProperty('monthly')) {
+      document.getElementById('bar-notify').style.display = 'flex';
+    }
+  </script>
 </body>
 </html>
