@@ -29,7 +29,7 @@ body {
         linear-gradient(45deg, #AFAFAF, transparent 20%) no-repeat,
         linear-gradient(135deg, #FFFFFF, #DFDFDF 30%) no-repeat;
 }
-div.page-grid {
+div.landing-page-grid {
   display: grid;
   grid-template-columns: calc(50% - 50px) calc(50% - 50px);
   grid-column-gap: 8%;
@@ -160,7 +160,7 @@ img.icon {
     linear-gradient(45deg, #F6F6F6, transparent 20%) no-repeat,
     linear-gradient(135deg, #BFBFBF, #DFDFDF 15%) no-repeat;
   }
-  div.page-grid {
+  div.landing-page-grid {
     grid-template-columns: 100%;
     padding: 2% 4%;
   }
@@ -188,4 +188,49 @@ img.icon {
   div.cell-foot {
     grid-area: 5 / 1 / span 1 / span 1;
   }
+}
+
+
+div.rest-of-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 4%;
+}
+div.rest-of-page a:link {
+  color: #0c72a1;
+  text-decoration: none;
+}
+div.rest-of-page a:visited {
+  color: #0c72a1;
+  text-decoration: none;
+}
+div.rest-of-page a:hover {
+  color: #0c72a1;
+  text-decoration: underline;
+}
+div.rest-of-page a:active {
+  color: #0c72a1;
+  text-decoration: underline;
+}
+div.news-item {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  box-shadow: 5px 8px 20px #888;
+  background: #fff;
+}
+div.news-item > video {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+}
+div.news-item > div.youtubeWrapper {
+  width: 100%;
+  height: auto;
+}
+div.news-item > div.text {
+  padding: 1em;
+  font-size: 66%;
+  line-height: 120%;
 }
