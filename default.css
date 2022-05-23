@@ -11,8 +11,9 @@ body > * {
 h1 {
   font-size: 16px;
   font-style: normal;
-  padding: 5px 0;
+  margin-left: 0;
   margin-right: 0;
+  padding: 5px min(30px, 5%);
   background: #d6eed4;
 }
 h1 > span {
@@ -96,18 +97,17 @@ a.top-column-item:active {
 }
 
 h1.news {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 div.news {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: min(15px, 2.5%);
-  margin-top: 15px;
+  margin: 0;
 }
 a.news-item {
   display: block;
-  padding: min(15px, 2.5%);;
+  padding: 10px min(30px, 5%);
   margin: 0;
 }
 a.news-item > div.date {
@@ -119,7 +119,7 @@ a.news-item > div.text {
   margin-bottom: 5px;
 }
 div.news-item-spacer {
-  height: 5px;
+  height: 15px;
 }
 div.badges span {
   font-size: 10px;
