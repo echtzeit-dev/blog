@@ -9,21 +9,25 @@ body > * {
   margin: min(30px, 5%);
 }
 h1 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-style: normal;
   margin-left: 0;
   margin-right: 0;
-  padding: 5px min(30px, 5%);
+  padding: 5px 0;
   background: #d6eed4;
 }
+h1.main {
+  margin-bottom: 40px;
+}
 h1 > span {
-  padding: 5px 10px;
-  background: #36A15C;
+  padding: 5px 60px 5px min(30px, 5%);
+  background: linear-gradient(125deg, #36A15C 80%, #d6eed4 80%);
   color: #fff;
 }
 div.motto {
   font-family: 'Montserrat', sans-serif;
-  font-size: min(72px, 9vw);
+  font-size: min(72px, 8.5vw);
   font-style: italic;
 }
 div.motto span {
