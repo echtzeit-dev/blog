@@ -17,9 +17,6 @@ h1 {
   padding: 5px 0;
   background: #d6eed4;
 }
-h1.main {
-  margin-bottom: 40px;
-}
 h1 > span {
   padding: 5px 60px 5px min(30px, 5%);
   background: linear-gradient(125deg, #36A15C 80%, #d6eed4 80%);
@@ -29,13 +26,16 @@ div.motto {
   font-family: 'Montserrat', sans-serif;
   font-size: min(72px, 8.5vw);
   font-style: italic;
+  padding: 10px min(30px, 5%);
+  overflow: clip;
+  margin: 0;
 }
 div.motto span {
   display: inline-block;
-  padding: 0 30px 0 8px;
-  margin: 0 35px 15px -5px;
+  padding: 0 3vw 0 1vw;
+  margin: 0 5vw 15px -5px;
+  box-shadow: 3px -3px #0089ecdd;
   text-align: left;
-  box-shadow: 5px -5px #0089ecdd;
 }
 div.top-column {
   display: flex;
@@ -53,14 +53,12 @@ a.top-column-item {
   display: flex;
   max-width: 400px;
   flex-direction: column;
-  background: #eee;
-  box-shadow: 3px 3px 10px #aaa;
+  box-shadow: 0 1px 16px 10px rgba(64, 64, 64, 0.08);
 }
 a.top-column-item > div.banner {
   flex: initial;
   display: flex;
   align-items: center;
-  background: radial-gradient(circle, #fff 0%, #fff 40%, #eee 100%);
 }
 a.top-column-item > div.banner > img {
   width: 100%;
@@ -83,12 +81,12 @@ a.top-column-item:visited {
 a.top-column-item:hover {
   text-decoration: underline;
   color: #0c72a1;
-  box-shadow: 2px 4px 10px #888;
+  box-shadow: 0 1px 12px 8px rgba(64, 64, 64, 0.16);
 }
 a.top-column-item:active {
   text-decoration: underline;
   color: #0c72a1;
-  box-shadow: 2px 4px 10px #888;
+  box-shadow: 0 1px 8px 5px rgba(64, 64, 64, 0.16);
 }
 @media only screen and (max-width: 600px) {
   div.top-column {
@@ -107,7 +105,7 @@ div.news {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 a.news-item {
   display: block;
