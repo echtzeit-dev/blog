@@ -26,9 +26,9 @@ div.motto {
   font-family: 'Montserrat', sans-serif;
   font-size: min(72px, 8.5vw);
   font-style: italic;
-  padding: 10px min(30px, 5%);
-  overflow: clip;
   margin: 0;
+  padding: 0;
+  overflow: visible;
 }
 div.motto span {
   display: inline-block;
@@ -37,65 +37,35 @@ div.motto span {
   box-shadow: 3px -3px #0089ecdd;
   text-align: left;
 }
-div.top-column {
+
+div.top-item {
   display: flex;
-  flex-direction: row;
-  align-items: left;
-  margin-bottom: 60px;
-}
-div.top-column-spacer {
-  width: 50px;
-  height: 30px;
-  flex-shrink: 0;
-}
-a.top-column-item {
-  flex-grow: initial;
-  display: flex;
-  max-width: 400px;
   flex-direction: column;
-  box-shadow: 0 1px 16px 10px rgba(64, 64, 64, 0.08);
+  margin-bottom: 50px;
 }
-a.top-column-item > div.banner {
-  flex: initial;
-  display: flex;
-  align-items: center;
+div.top-item div.motto > span {
+  display: inline-block;
+  padding: 0 3vw 0 1vw;
+  margin: 0 5vw 15px -5px;
+  box-shadow: 3px -3px #0089ecdd;
+  text-align: left;
+  background: #ffffffc0;
 }
-a.top-column-item > div.banner > img {
-  width: 100%;
+div.top-item div.text {
   padding: 10px;
-  box-sizing: border-box;
+  padding-left: 0;
+  line-height: 28px;
 }
-a.top-column-item > div.text {
-  flex: auto;
-  padding: 10px;
-  background: #fff;
+div.services div.motto {
+  background-image: url('img/wyvern.png');
+  background-position: top right;
+  background-size: min(50vw, 450px);
+  background-repeat: no-repeat;
+  max-width: 1024px;
 }
-a.top-column-item:link {
-  text-decoration: none;
-  color: #1A1818;
-}
-a.top-column-item:visited {
-  text-decoration: none;
-  color: #1A1818;
-}
-a.top-column-item:hover {
-  text-decoration: underline;
-  color: #0c72a1;
-  box-shadow: 0 1px 12px 8px rgba(64, 64, 64, 0.16);
-}
-a.top-column-item:active {
-  text-decoration: underline;
-  color: #0c72a1;
-  box-shadow: 0 1px 8px 5px rgba(64, 64, 64, 0.16);
-}
-@media only screen and (max-width: 600px) {
-  div.top-column {
-    display: flex;
-    flex-direction: column;
-  }
-  a.top-column-item {
-    width: 100%;
-  }
+div.ez-clang img.banner {
+  float: right;
+  width: max(50vw, 150px);
 }
 
 h1.news {

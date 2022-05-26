@@ -11,28 +11,31 @@
 </head>
 <body>
   <h1><span>echtzeit.dev</span></h1>
-  <div class="motto">
-    <span>Programmability</span><br><span>On</span><span>All</span><span>Layers</span>
-  </div>
-  <div class="top-column">
-    <a class="top-column-item" href="ez-clang/">
-      <div class="banner">
-        <img class="ez-clang" src="img/ez-clang.png">
-      </div>
-      <div class="text">
-        C++ REPL for bare-metal embedded devices
-      </div>
-    </a>
-    <div class="top-column-spacer">
+  <div class="top-item services">
+    <div class="motto">
+      <span>Solid</span><br>
+      <span>Engineering</span><br>
+      <span>Solutions</span>
     </div>
-    <a class="top-column-item" href="#">
-      <div class="banner">
-        <img class="wyvern" src="img/wyvern.png">
+    <div class="text">
+      We help small and mid-size companies to build and maintain LLVM-based technologies here in Berlin and remote.
+      <a href="services/">Read more &gt;&gt;</a>
+    </div>
+  </div>
+  <div class="top-item ez-clang">
+    <div class="motto">
+      <span>Programmability</span><br><span>On</span><span>All</span><span>Layers</span>
+    </div>
+    <div class="text">
+      <img class="banner" src="ez-clang/img/ez-clang.png">
+      <div>
+        ez-clang is an experimental C++ REPL for bare-metal embedded devices.
+        It cross-compiles code with Clang on the fly and uses a LLVM remote-JIT backend to link it incrementally on the device.
+        All heavy lifting happens on the host machine and thus the RPC endpoint on the device is very simple. It only takes few kilobytes of flash memory.
+        Right now, ez-clang supports a selection of ARM Cortex devices like Arduino Due and Stellaris LM3S811 (QEMU).
+        <a href="ez-clang/">Read more &gt;&gt;</a>
       </div>
-      <div class="text">
-        Solid engineering solutions
-      </div>
-    </a>
+    </div>
   </div>
   <h1 class="news"><span>News</span></h1>
   <div class="news">
