@@ -79,6 +79,9 @@ div.services div.motto {
   background-repeat: no-repeat;
   max-width: 1024px;
 }
+div.services div.text {
+  max-width: 850px;
+}
 div.ez-clang img.banner {
   float: right;
   width: max(50vw, 150px);
