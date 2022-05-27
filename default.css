@@ -22,7 +22,13 @@ h1 > span {
   background: linear-gradient(125deg, #36A15C 80%, #d6eed4 80%);
   color: #fff;
 }
-div.motto {
+
+div.top-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+div.top-item div.motto {
   font-family: 'Montserrat', sans-serif;
   font-size: min(72px, 8.5vw);
   font-style: italic;
@@ -30,23 +36,10 @@ div.motto {
   padding: 0;
   overflow: visible;
 }
-div.motto span {
-  display: inline-block;
-  padding: 0 3vw 0 1vw;
-  margin: 0 5vw 15px -5px;
-  box-shadow: 3px -3px #0089ecdd;
-  text-align: left;
-}
-
-div.top-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
 div.top-item div.motto > span {
   display: inline-block;
-  padding: 0 3vw 0 1vw;
-  margin: 0 5vw 15px -5px;
+  padding: 0 min(3vw, 20px) 0 1vw;
+  margin: 0 min(5vw, 30px) 15px -5px;
   box-shadow: 3px -3px #0089ecdd;
   text-align: left;
   background: #ffffffc0;
@@ -55,6 +48,29 @@ div.top-item div.text {
   padding: 10px;
   padding-left: 0;
   line-height: 28px;
+}
+div.top-item a:link {
+  text-decoration: none;
+  color: #0089ec;
+}
+div.top-item a:visited {
+  text-decoration: none;
+  color: #0089ec;
+}
+div.top-item a:active {
+  text-decoration: underline;
+  color: #0089ec;
+}
+div.top-item a:hover {
+  text-decoration: underline;
+  color: #0089ec;
+}
+div.top-item a[target="_blank"]:hover {
+  background-image: url('img/more-info.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 11px;
 }
 div.services div.motto {
   background-image: url('img/wyvern.png');
