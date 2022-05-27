@@ -26,7 +26,7 @@ h1 > span {
 div.top-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 div.top-item div.motto {
   font-family: 'Montserrat', sans-serif;
@@ -45,8 +45,6 @@ div.top-item div.motto > span {
   background: #ffffffc0;
 }
 div.top-item div.text {
-  padding: 10px;
-  padding-left: 0;
   line-height: 28px;
 }
 div.top-item a:link {
