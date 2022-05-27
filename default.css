@@ -26,7 +26,7 @@ h1 > span {
 div.top-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 div.top-item div.motto {
   font-family: 'Montserrat', sans-serif;
@@ -80,9 +80,12 @@ div.services div.motto {
 div.services div.text {
   max-width: 850px;
 }
+div.ez-clang div.text {
+  max-width: 1000px;
+}
 div.ez-clang img.banner {
   float: right;
-  width: max(50vw, 150px);
+  width: min(max(50vw, 150px), 600px);
 }
 
 h1.news {
