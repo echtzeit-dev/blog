@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #1A1818;
+}
+body > * {
+  margin: min(30px, 5%);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: min(45px, 7.5%);
+  padding: 5px 0;
+  background: #d6eed4;
+}
+h1 > span {
+  padding: 5px 40px 5px min(30px, 5%);
+  background-image: linear-gradient(125deg, #36A15C 50%, #d6eed4 50%);
+  background-size: 25px auto;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #36A15C;
+  color: #fff;
+}
+h1 > span a:link {
+  text-decoration: none;
+  color: #fff;
+}
+h1 > span a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+h1 > span a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+h1 > span a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+div.top-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: min(60px, 10%);
+}
+div.top-item a:link {
+  text-decoration: none;
+  color: #0089ec;
+}
+div.top-item a:visited {
+  text-decoration: none;
+  color: #0089ec;
+}
+div.top-item a:active {
+  text-decoration: underline;
+  color: #0089ec;
+}
+div.top-item a:hover {
+  text-decoration: underline;
+  color: #0089ec;
+}
+div.top-item a[target="_blank"]:hover {
+  background-image: url('img/more-info.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 11px;
+}
+
+div.motto {
+  font-family: 'Montserrat', sans-serif;
+  font-size: min(56px, 8.5vw);
+  font-style: italic;
+}
+div.motto > span {
+  display: inline-block;
+  padding: 0 min(3vw, 20px) 0 1vw;
+  margin: 0 min(5vw, 30px) 15px -5px;
+  box-shadow: 3px -3px #0089ecdd;
+  text-align: left;
+  background: #ffffffc0;
+}
+div.text {
+  line-height: 28px;
+}
