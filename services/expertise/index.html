@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>echtzeit.dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,800&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="../../base.css" rel="stylesheet">
+  <link href="../default.css" rel="stylesheet">
+  <link href="default.css" rel="stylesheet">
+</head>
+<body>
+  <h1>
+    <span class="level1">
+      <a href="../..">echtzeit.dev</a>
+    </span><span class="level2">
+      <a href="..">services</a>
+    </span><span class="level3">
+      <a href=".">expertise</a>
+    </span>
+  </h1>
+  <div class="section">
+    <div class="motto">
+      <span>Solid</span><br>
+      <span>Engineering</span><br>
+      <span>Solutions</span>
+    </div>
+    <div class="text">
+      This list of project types is inspired by previous contract work.
+      If you have a question or a different kind of request,
+      please don't hesitate to reach out.
+    </div>
+
+    <div class="text" id="porting">
+      <h2>Porting to Newer Release</h2>
+      <ul class="paragraphs">
+        <li>
+          LLVM is not an easy dependency for any project.
+          It doesn't give any guarantees on API stability (apart from the limited
+          C-API), it adds a significant binary size and even after years of
+          stabilization it's still moving so fast! <!--(... commits per day on average).-->
+        </li>
+        <li>
+          On-top of that, clients frequently <b>maintain a fork downstream of
+          LLVM</b>.
+          It's a pragmatic and common solution, but it has a significant downside:
+          Updating such a project for a newer upstream version is not only about API
+          breakage and feature migration.
+          The downstream modifications in LLVM have to be taken to the new release
+          as well!
+          This can add tremendous complexity and should be approached with a plan.
+        </li>
+        <li>
+          Depending on your needs we share our experience through consulting and
+          hands-on support.
+          Moving on to a newer version of LLVM doesn't need to burn endless
+          engineering hours.
+          External expertise can boost the process for you.
+          Let's talk about it!
+        </li>
+      </ul>
+    </div>
+
+    <div class="text">
+      <h2>Bugfixing</h2>
+      <ul class="paragraphs">
+        <li>
+          All software has bugs and so has LLVM &mdash; despite of its high code
+          quality standards.
+          The <b>investigation phase</b> is about determining the piece(s) of
+          code that cause the defect.
+          We can help you confirm bugs across LLVM versions, find workarounds
+          and isolate reproducers.
+          The <b>implementation phase</b> is about fixing the defect in your
+          specific LLVM release version.
+          We can help you to understand the context of the defect, write tests
+          and fix the defect.
+        </li>
+        <li>
+          Often times, bugs turn out as regressions that silently went through
+          releases without notice, because the code didn't have an appropriate
+          test-case. While everybody should know that <b>all untested
+          functionality will break eventually</b>, most users never check
+          whether their specific requirements are actually covered!
+        </li>
+        <li>
+          We encourage our clients to <a href="#upstreaming">upstream bugfixes</a>
+          in order to prevent regressions in subsequent releases.
+        </li>
+      </ul>
+    </div>
+
+    <div class="text" id="feature-dev">
+      <h2>Feature Development</h2>
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English.
+    </div>
+
+    <div class="text" id="upstreaming">
+      <h2>Upstreaming</h2>
+    </div>
+
+    <div class="text">
+      <h2>Upstream Reviews</h2>
+    </div>
+
+    <div class="text">
+      <h2>Hourly Consulting</h2>
+    </div>
+
+    <div class="text">
+      <h2>Workshops</h2>
+    </div>
+  </div>
+</body>
+</html>

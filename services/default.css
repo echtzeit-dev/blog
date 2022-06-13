@@ -1,0 +1,45 @@
+h1 > span.level1 {
+  background-image: linear-gradient(125deg, #36A15C 50%, #b538e2 50%);
+}
+h1 > span.level2 {
+  background-image: linear-gradient(125deg, #b538e2 50%, #d6eed4 50%);
+  background-color: #b538e2;
+  padding-left: 15px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+div.top-item {
+  padding-bottom: 0;
+}
+div.text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul {
+  padding-left: 25px;
+}
+ul.paragraphs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.paragraphs > li {
+  margin: 10px 0;
+}
+
+div.motto {
+  background-image: url('../img/wyvern.png');
+  background-position: top right;
+  background-size: min(50vw, 380px);
+  background-repeat: no-repeat;
+  max-width: 1024px;
+}
