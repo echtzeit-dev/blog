@@ -211,24 +211,27 @@ div.rest-of-page a:active {
   color: #0c72a1;
   text-decoration: underline;
 }
+div.news-container {
+  display: flex;
+  flex-flow: wrap;
+}
 div.news-item {
-  float: left;
   margin-right: 4%;
   margin-bottom: 4%;
   display: flex;
   flex-direction: column;
   width: 500px;
+  max-width: 100%;
   box-shadow: 5px 8px 20px #888;
   background: #fff;
 }
 div.news-item > video {
+  width: 100%;
+  height: auto;
   cursor: pointer;
-  width: 100%;
-  height: auto;
 }
-div.news-item > div.youtubeWrapper {
-  width: 100%;
-  height: auto;
+div.news-item > iframe {
+  max-width: 100%;
 }
 div.news-item > div.text {
   padding: 1em;
