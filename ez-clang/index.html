@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ez-clang C++ REPL for bare metal embedded devices</title>
+  <title>ez-clang C++ REPL for bare metal embedded devices &mdash; echtzeit.dev</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link  href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,800&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="../base.css" rel="stylesheet">
   <link href="default.css" rel="stylesheet">
 
   <meta property="og:type" content="website"/>
@@ -32,14 +33,16 @@
   <meta name="twitter:player:height" content="1080">
 </head>
 <body>
-  <div id="bar-notify">
-    Thanks for subscribing!
-  </div>
+  <h1>
+    <span class="level1">
+      <a href="..">echtzeit.dev</a>
+    </span>
+  </h1>
   <div class="landing-page-grid">
     <div class="cell-top">
       <img src="img/ez-clang.png" alt="ez-clang" class="ez-clang-heading">
       <div class="summary">
-        Clang-based cross-compiler with an LLVM remote-JIT backend targeting low-resource embedded devices
+        Clang-based cross-compiler with an LLVM remote-JIT backend targeting bare-metal embedded devices
       </div>
       <div class="keywords-container">
         <div>Standard C++</div>
@@ -101,8 +104,9 @@
       document.getElementById('bar-notify').style.display = 'flex';
     }
   </script>
+
+  <h1 class="news"><span>News</span></h1>
   <div class="rest-of-page">
-    <h1>News</h1>
     <div class="news-container">
       <div class="news-item">
         <iframe src="https://www.youtube.com/embed/_qYqEYh1nHE?rel=0&amp;showinfo=0" allowfullscreen="" width="500" height="300" frameborder="0">
