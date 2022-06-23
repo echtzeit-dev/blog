@@ -33,12 +33,15 @@
   <meta name="twitter:player:height" content="1080">
 </head>
 <body>
+  <div id="bar-notify">
+    Thanks for subscribing!
+  </div>
   <h1>
     <span class="level1">
       <a href="..">echtzeit.dev</a>
     </span>
   </h1>
-  <div class="landing-page-grid">
+  <div class="main-grid">
     <div class="cell-top">
       <img src="img/ez-clang.png" alt="ez-clang" class="ez-clang-heading">
       <div class="summary">
@@ -57,7 +60,7 @@
         Your browser does not support the HTML5 video tag.
       </video>
       <div>
-        ⇧ <a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink">Blinking the orange LED</a>
+        ⇧ <a target="_blank" href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink">Blinking the orange LED</a>
         from the REPL
       </div>
       <video poster="img/video-preview-05.jpg" title="Play video" onclick="this.setAttribute('controls', 'controls')">
@@ -65,22 +68,22 @@
         Your browser does not support the HTML5 video tag.
       </video>
       <div>
-        ⇧ <a href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/ReadAnalogVoltage">Reading knob values</a>
+        ⇧ <a target="_blank" href="https://www.arduino.cc/en/Tutorial/BuiltInExamples/ReadAnalogVoltage">Reading knob values</a>
         from the REPL
       </div>
     </div>
     <div class="cell-links">
-      <a href="https://github.com/echtzeit-dev/ez-clang">
+      <a target="_blank" href="https://github.com/echtzeit-dev/ez-clang">
         <img src="img/github.png" class="icon" alt="github">
         https://github.com/echtzeit-dev/ez-clang
       </a>
-      <a href="https://hub.docker.com/r/echtzeit/ez-clang">
+      <a target="_blank" href="https://hub.docker.com/r/echtzeit/ez-clang">
         <img src="img/docker.png" class="icon" alt="docker">
         https://hub.docker.com/r/echtzeit/ez-clang
       </a>
     </div>
     <div class="cell-subscribe">
-      <a href="https://1f5cb83c.sibforms.com/serve/MUIEANepS0UzFFV4lyMn5putKyhZ95-egftuwmhwVkDgcnRTpvJAjwsBEyyiOnCA2z8tFstbNyHbLZyWOkBvLBLfUdmbB3AJvqZdwKzUmqn56gYgH0R0Mn8ximaE5uaT0iBsnvwWcY4KAR-l97FFanuALmt9GE359OafqJ6T24ZvmsZG-ttcjJ9Yb0BgzEECgEE9rlK8pbD0tRTV">
+      <a target="_blank" href="https://1f5cb83c.sibforms.com/serve/MUIEANepS0UzFFV4lyMn5putKyhZ95-egftuwmhwVkDgcnRTpvJAjwsBEyyiOnCA2z8tFstbNyHbLZyWOkBvLBLfUdmbB3AJvqZdwKzUmqn56gYgH0R0Mn8ximaE5uaT0iBsnvwWcY4KAR-l97FFanuALmt9GE359OafqJ6T24ZvmsZG-ttcjJ9Yb0BgzEECgEE9rlK8pbD0tRTV">
         <img src="img/mail.png" class="icon" alt="mail">
         Subscribe to monthly updates
       </a>
@@ -89,7 +92,7 @@
       <img src="img/contact-sgraenitz.jpg" alt="contact-sgraenitz">
       <div>
         Contact: Stefan Gränitz<br>
-        <a href="https://weliveindetail.github.io/blog/about/">https://weliveindetail.github.io/blog/about/</a>
+        <a target="_blank" href="https://weliveindetail.github.io/blog">https://weliveindetail.github.io/blog</a>
       </div>
     </div>
   </div>
@@ -105,26 +108,24 @@
     }
   </script>
 
-  <h1 class="news"><span>News</span></h1>
-  <div class="rest-of-page">
-    <div class="news-container">
-      <div class="news-item">
-        <iframe src="https://www.youtube.com/embed/_qYqEYh1nHE?rel=0&amp;showinfo=0" allowfullscreen="" width="500" height="300" frameborder="0">
-        </iframe>
-        <div class="text">
-          <b>May, 11 2022 &mdash; European LLVM Developers' Meeting</b>
-          ez-clang was presented at the <a href="https://llvm.org/devmtg/2022-05/">bi-annual gathering of the LLVM Project community</a> in London 2022.
-          Slides are <a href="https://llvm.org/devmtg/2022-05/slides/2022EuroLLVM-ezClang.pdf">available here</a>.
-        </div>
+  <h1 class="news" id="news"><span>News</span></h1>
+  <div class="news-container">
+    <div class="news-item">
+      <iframe src="https://www.youtube.com/embed/_qYqEYh1nHE?rel=0&amp;showinfo=0" allowfullscreen="" width="400" height="225" frameborder="0">
+      </iframe>
+      <div class="text">
+        <b>May, 11 2022 &mdash; European LLVM Developers' Meeting</b>
+        ez-clang was presented at the <a target="_blank" href="https://llvm.org/devmtg/2022-05/">bi-annual gathering of the LLVM Project community</a> in London.
+        Slides are <a target="_blank" href="https://llvm.org/devmtg/2022-05/slides/2022EuroLLVM-ezClang.pdf">available here</a>.
       </div>
-      <div class="news-item">
-        <iframe src="https://www.youtube.com/embed/gKNxTeDBczk?rel=0&amp;showinfo=0" allowfullscreen="" width="500" height="300" frameborder="0">
-        </iframe>
-        <div class="text">
-          <b>March, 10 2022 &mdash; compiler-research.org Meetup</b>
-          ez-clang was presented for the very first time in the monthly <a href="https://compiler-research.org/meetings/#caas_10Mar2022">Compiler-as-a-services online meeting</a>.
-          Slides are <a href="https://compiler-research.org/assets/presentations/S_Graenitz-CaaS_EzClang.pdf">available here</a>.
-        </div>
+    </div>
+    <div class="news-item">
+      <iframe src="https://www.youtube.com/embed/gKNxTeDBczk?rel=0&amp;showinfo=0" allowfullscreen="" width="400" height="225" frameborder="0">
+      </iframe>
+      <div class="text">
+        <b>March, 10 2022 &mdash; compiler-research.org Meetup</b>
+        ez-clang was presented for the very first time in the monthly <a target="_blank" href="https://compiler-research.org/meetings/#caas_10Mar2022">Compiler-as-a-services online meeting</a>.
+        Slides are <a target="_blank" href="https://compiler-research.org/assets/presentations/S_Graenitz-CaaS_EzClang.pdf">available here</a>.
       </div>
     </div>
   </div>

@@ -1,3 +1,7 @@
+body {
+  background: #DFDFDF;
+  padding-top: 0;
+}
 h1 > span {
   background-image: linear-gradient(125deg, #36A15C 50%, #dfdfdf 50%);
   background-size: 30px auto;
@@ -23,9 +27,6 @@ h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
-body {
-  background: #DFDFDF;
-}
 
 a:link {
   color: #1A1818;
@@ -44,12 +45,12 @@ a:active {
   text-decoration: underline;
 }
 
-div.landing-page-grid {
+div.main-grid {
   display: grid;
   grid-template-columns: calc(50% - 50px) calc(50% - 50px);
   grid-column-gap: 8%;
   grid-row-gap: 1em;
-  padding: 2% 4% 8% 8%;
+  padding: 30px 30px 50px 80px;
   max-width: 1200px;
 }
 img.ez-clang-heading {
@@ -147,7 +148,7 @@ div.keywords-container > div {
   padding: 0.5em 1em;
   margin: 0 0.75em 0.75em 0;
   border-radius: 2em;
-  background: rgb(0, 189, 186);
+  background-color: #778899;
   color: #FFFFFF;
 }
 img.icon {
@@ -158,12 +159,56 @@ img.icon {
 #bar-notify {
   display: none;
   justify-content: center;
-  background: linear-gradient(22deg,
-    rgba(255, 0, 0, 0.75) 0%,    rgba(255, 154, 0, 0.70) 10%,  rgba(208, 222, 33, 0.65) 20%,
-    rgba(79, 220, 74, 0.60) 30%, rgba(63, 218, 216, 0.55) 40%, rgba(47, 201, 226, 0.5) 50%,
-    rgba(28, 127, 238, 0.55) 60%, rgba(95, 21, 242, 0.60) 70%, rgba(186, 12, 248, 0.65) 80%,
-    rgba(251, 7, 217, 0.70) 90%,  rgba(255, 0, 0, 0.75) 100%);
-  color: #000;
+  padding: 5px;
+  font-style: italic;
+  color: #fff;
+  background-color: #2c2c2c;
+}
+
+div.news-container {
+  display: flex;
+  flex-flow: wrap;
+  padding: 4%;
+  padding-right: 0;
+}
+div.news-container a:link {
+  color: #0c72a1;
+  text-decoration: none;
+}
+div.news-container a:visited {
+  color: #0c72a1;
+  text-decoration: none;
+}
+div.news-container a:hover {
+  color: #0c72a1;
+  text-decoration: underline;
+}
+div.news-container a:active {
+  color: #0c72a1;
+  text-decoration: underline;
+}
+div.news-item {
+  margin-right: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 0 20px #aaa;
+  background-color: #fafafa;
+}
+div.news-item > video {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+div.news-item > iframe {
+  max-width: 100%;
+}
+div.news-item > div.text {
+  padding: 1em;
+  font-size: 90%;
+  line-height: 1.5em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -176,8 +221,9 @@ img.icon {
       rgba(28, 127, 238, 0.55) 60%, rgba(95, 21, 242, 0.60) 70%, rgba(186, 12, 248, 0.65) 80%,
       rgba(251, 7, 217, 0.70) 90%,  rgba(255, 0, 0, 0.75) 100%);
   }
-  div.landing-page-grid {
+  div.main-grid {
     grid-template-columns: 100%;
+    margin-top: 20px;
     padding: 2% 4%;
   }
   div.cell-top > div {
@@ -203,8 +249,8 @@ img.icon {
   }
   div.cell-foot {
     grid-area: 5 / 1 / span 1 / span 1;
+    margin-bottom: 60px;
   }
-}
 @media only screen and (max-width: 650px) {
   h1 {
     background-image: linear-gradient(22deg,
@@ -213,59 +259,14 @@ img.icon {
       rgba(251, 7, 217, 0.70) 90%,  rgba(255, 0, 0, 0.75) 100%);
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   h1 {
     background-image: linear-gradient(22deg,
       rgb(54, 161, 92) 50%,
       rgba(28, 127, 238, 0.55) 60%, rgba(95, 21, 242, 0.60) 70%, rgba(186, 12, 248, 0.65) 80%,
       rgba(251, 7, 217, 0.70) 90%,  rgba(255, 0, 0, 0.75) 100%);
   }
-}
-
-div.rest-of-page {
-  padding: 4%;
-  padding-right: 0;
-}
-div.rest-of-page a:link {
-  color: #0c72a1;
-  text-decoration: none;
-}
-div.rest-of-page a:visited {
-  color: #0c72a1;
-  text-decoration: none;
-}
-div.rest-of-page a:hover {
-  color: #0c72a1;
-  text-decoration: underline;
-}
-div.rest-of-page a:active {
-  color: #0c72a1;
-  text-decoration: underline;
-}
-div.news-container {
-  display: flex;
-  flex-flow: wrap;
-}
-div.news-item {
-  margin-right: 4%;
-  margin-bottom: 4%;
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  max-width: 100%;
-  box-shadow: 5px 8px 20px #888;
-  background: #fff;
-}
-div.news-item > video {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-div.news-item > iframe {
-  max-width: 100%;
-}
-div.news-item > div.text {
-  padding: 1em;
-  font-size: 90%;
-  line-height: 1.5em;
+  div.news-container {
+    padding-top: 8%;
+  }
 }
