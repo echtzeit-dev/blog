@@ -1,3 +1,21 @@
+html, body {
+  height: 100%;
+  background-color: #eee;
+  padding-top: 0;
+}
+
+div.page {
+  max-width: 1024px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-top: 0;
+  background-color: #fff;
+  box-shadow: 0 0 15px #ccc;
+}
+
+div.nav {
+  padding-top: min(30px, max(0px, calc((100vw - 1024px) / 2)));
+}
 h1 > span.level1 {
   background-image: linear-gradient(125deg, #36A15C 50%, #b538e2 50%);
 }
@@ -16,12 +34,24 @@ h2 {
   margin-bottom: 10px;
 }
 
+div.head {
+  padding: min(60px, 10%) min(30px, 5%);
+}
+div.head div.text {
+  padding: 0;
+}
 div.top-item {
   padding-bottom: 0;
+  margin-bottom: 30px;
+}
+div.top-item div.text {
+  padding-top: min(30px, 5%);
+  padding-bottom: min(30px, 5%);
 }
 div.text {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  max-width: unset;
+  padding-top: min(10px, 5%);
+  padding-bottom: min(60px, 10%);
 }
 
 ul {
@@ -42,4 +72,17 @@ div.motto {
   background-size: min(50vw, 380px);
   background-repeat: no-repeat;
   max-width: 1024px;
+  margin: 0;
+}
+
+div#expertise {
+  background-color: aliceblue;
+}
+
+div#how-it-works {
+  background-color: cornsilk;
+}
+
+div#contact {
+  background-color: #d0fbcd;
 }

@@ -9,37 +9,68 @@
   <link  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,800&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link href="../base.css" rel="stylesheet">
   <link href="default.css" rel="stylesheet">
+  <script language="JavaScript" type="text/javascript">
+    if (window.location.host == "weliveindetail.github.io" && window.location.protocol != "https:") {
+      window.location.protocol = "https:";
+    }
+
+    function decode(a, shift) {
+      return a.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + shift) ? c : c - 26);
+      })
+    };
+    function encode(a, shift) {
+      return a.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c >= "a" ? 97 : 65) <= (c = c.charCodeAt(0) - shift) ? c : c + 26);
+      })
+    };
+    function openMailer(element) {
+      var y = decode("hvdgoj", 5) + ":" +
+              decode("fgrsna.tenravgm", 13) + "@" +
+              decode("pvjru.lxv", 17);
+
+      element.setAttribute("href", y);
+      element.setAttribute("onclick", "");
+    };
+  </script>
 </head>
 <body>
-  <h1>
-    <span class="level1">
-      <a href="..">echtzeit.dev</a>
-    </span><span class="level2">
-      <a href=".">services</a>
-    </span>
-  </h1>
-  <div class="section">
-    <div class="motto">
-      <span>Solid</span><br>
-      <span>Engineering</span><br>
-      <span>Solutions</span>
+  <div class="page">
+    <div class="nav">
+      <h1>
+        <span class="level1">
+          <a href="..">echtzeit.dev</a>
+        </span><span class="level2">
+          <a href=".">services</a>
+        </span>
+      </h1>
     </div>
-    <div class="text">
-      We offer various development services with a focus on compilers and native
-      tooling based on the <a href="https://www.youtube.com/watch?v=BT2Cv-Tjq7Q">
-      LLVM compiler infrastructure</a>.
-    </div>
-
-    <div class="top-item" id="clients">
-      <a href="clients">
-        <div class="text">
-          <h2>Clients</h2>
-          LLVM is not an easy dependency. It's driven by big tech, but everybody
-          should be able to profit from one to the most advanced low-level
-          toolsets on the planet.
-          <span class="link">Read&nbsp;more&nbsp;&gt;&gt;</span>
-        </div>
-      </a>
+    <div class="head">
+      <div class="motto">
+        <span>Solid</span><br>
+        <span>Engineering</span><br>
+        <span>Solutions</span>
+      </div>
+      <div class="text">
+        <ul class="paragraphs">
+          <li>
+            We offer various development services with a focus on compilers and native
+            tooling based on the <a href="https://www.youtube.com/watch?v=BT2Cv-Tjq7Q">
+            LLVM compiler infrastructure</a>.
+            LLVM is driven by a few famous tech gaints, who can effort their very own
+            developer tools departments to handle it.
+            It's <a href="../expertise/#porting">not an easy dependency</a>
+            for anyone.
+          </li>
+          <li>
+            For smaller companies it remains a challenge to integrate LLVM in their
+            own products.
+            We help small players to evaluate, use and contribute to LLVM.
+            Everybody should be able to profit from one to the most advanced
+            low-level toolsets on the planet.
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="top-item" id="expertise">
@@ -60,30 +91,22 @@
           <h2>How it works</h2>
           There is no way to know in advance what the dominating complexity
           will be in the next project.
-          Our answer to it is an agile approach of <i>Sprints and Breaks</i>.
+          Our answer is an agile approach of <i>Sprints and Breaks</i>.
           <span class="link">Read&nbsp;more&nbsp;&gt;&gt;</span>
         </div>
       </a>
     </div>
 
-    <div class="text" id="pricing">
-      <h2>Pricing</h2>
-      <ul class="paragraphs">
-        <li>
-          We distinguish between block work of at least one week full-time and
-          on-demand consulting. We publish our pricing policy here for
-          transparency reasons.
-        </li>
-        <li>
-          For block work we charge an hourly rate of 120€ (plus VAT).
-          This makes a total of 9600€ for a full two-weeks sprint.
-          Please note that we give a <b>10% discount on open-source development!</b>
-        </li>
-        <li>
-          On-demand consulting is billed by the hour and we charge an hourly
-          rate of 180€ (plus VAT).
-        </li>
-      </ul>
+    <div class="top-item" id="contact">
+      <div class="text">
+        <h2>Contact</h2>
+        <ul class="paragraphs">
+          <li>
+            Please reach out via <a href="click:the.address.will.be.decrypted.by.javascript" onclick="openMailer(this);">E-Mail</a>
+            or pick a slot for a video call on <a href="https://calendly.com/stefan-graenitz/30min">Calendly</a>.
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>

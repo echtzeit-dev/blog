@@ -13,7 +13,8 @@ h1 > span.level3 {
 }
 
 div.text {
-  padding-top: 20px;
+  padding-top: 0;
+  padding-bottom: min(30px, 5%);
 }
 
 div.wrappable-columns {
@@ -22,16 +23,23 @@ div.wrappable-columns {
   padding: 30px 0;
 }
 div.wrappable-columns > div.column {
-  padding: 30px 40px;
-  box-shadow: 0 0 20px #eee;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee8;
+}
+div.wrappable-columns > div.column > div {
+  padding: 3px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
 }
 div.wrappable-columns > div.spacer {
   flex: initial;
-  width: 120px;
+  width: 80px;
   height: 40px;
 }
 div.wrappable-columns ul {
-  margin: 0;
+  margin: 30px 40px;
   padding-left: 20px;
 }
 
@@ -39,4 +47,12 @@ div.wrappable-columns ul {
   div.wrappable-columns {
     flex-direction: column;
   }
+}
+
+div#checklist-bugs {
+  background-color: cornflowerblue;
+}
+
+div#checklist-features {
+  background-color: mediumseagreen;
 }

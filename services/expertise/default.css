@@ -13,5 +13,10 @@ h1 > span.level3 {
 }
 
 div.text {
-  padding-top: 20px;
+  padding-top: 0;
+  padding-bottom: min(30px, 5%);
+}
+
+div.head div.text {
+  max-width: 640px;
 }

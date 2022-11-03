@@ -12,27 +12,31 @@
   <link href="default.css" rel="stylesheet">
 </head>
 <body>
-  <h1>
-    <span class="level1">
-      <a href="../..">echtzeit.dev</a>
-    </span><span class="level2">
-      <a href="..">services</a>
-    </span><span class="level3">
-      <a href=".">how&nbsp;it&nbsp;works</a>
-    </span>
-  </h1>
-  <div class="section">
-    <div class="motto">
-      <span>Solid</span><br>
-      <span>Engineering</span><br>
-      <span>Solutions</span>
+  <div class="page">
+    <div class="nav">
+      <h1>
+        <span class="level1">
+          <a href="../..">echtzeit.dev</a>
+        </span><span class="level2">
+          <a href="..">services</a>
+        </span><span class="level3">
+          <a href=".">how&nbsp;it&nbsp;works</a>
+        </span>
+      </h1>
     </div>
-    <div class="text">
-      Since 2016 we worked on a multitude of compiler and tools projects with
-      companies from different industries. The invariant observation is
-      that projects are all very different. There is no way to know in advance what
-      the dominating complexity will be next time. Our answer to it is an
-      approach that we call <a href="sprints-and-breaks">Sprints and Breaks</a>.
+    <div class="head">
+      <div class="motto">
+        <span>Solid</span><br>
+        <span>Engineering</span><br>
+        <span>Solutions</span>
+      </div>
+      <div class="text">
+        Since 2016 we worked on a multitude of compiler and tools projects with
+        companies from different industries. The invariant observation is
+        that projects are all very different. There is no way to know in advance what
+        the dominating complexity will be next time. Our answer to it is an
+        approach that we call <a href="sprints-and-breaks">Sprints and Breaks</a>.
+      </div>
     </div>
 
     <div class="text" id="intro">
@@ -49,7 +53,7 @@
       plan the first sprint.
       <div class="wrappable-columns">
         <div class="column">
-          <b>Check-list Bugs:</b>
+          <div id="checklist-bugs">Check-list Bugs</div>
           <ul>
             <li>Do we know what exactly the problem is?</li>
             <li>Can we reproduce the problem in a deterministic way?</li>
@@ -64,12 +68,12 @@
         <div class="spacer">
         </div>
         <div class="column">
-        <b>Check-list Features:</b>
+          <div id="checklist-features">Check-list Features</div>
           <ul>
             <li>Do we know what exactly the goal is?</li>
             <li>Can we write a test that covers the feature?</li>
             <li>Is there a way to emulate the functionality without code modifications?</li>
-            <li>Can we identify the part of the code base that must be extended?</li>
+            <li>Can we identify the parts of the code base that need to be extended?</li>
             <li>Can we break down the feature and define a first step?</li>
             <li>Can we make an effort estimation for the first step?</li>
             <li>Or otherwise: How long do we think it takes to understand the
@@ -98,8 +102,8 @@
           well-specified task.
           On the executive level, it might be a feature implementation in a
           code base.
-          On the preparatory level, it might as well be finding answers to a
-          given number of questions.
+          On the preparatory level, it might as well be about finding answers to
+          a given number of questions.
           Once we know the answers, we revisit our planning and decide what
           the next step would be.
           If we didn't manage to complete the sprint within the time limit,
