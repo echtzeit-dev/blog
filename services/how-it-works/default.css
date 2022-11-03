@@ -34,8 +34,8 @@ div.wrappable-columns > div.spacer {
   height: 40px;
 }
 div.wrappable-columns ul {
-  margin: 30px 40px;
-  padding-left: 20px;
+  margin: min(30px, 5%) min(40px, 7%);
+  padding-left: min(20px, 3%);
 }
 
 @media only screen and (max-width: 800px) {
