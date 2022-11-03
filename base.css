@@ -27,6 +27,16 @@ h1 > span {
   background-color: #36A15C;
   color: #fff;
 }
+
+/* Safari browsers: any version and any device */
+@media only screen and (-webkit-min-device-pixel-ratio:0) {
+  h1 > span {
+    background-size: 25px 30px;
+    background-position-x: right;
+    background-position-y: 50%;
+  }
+}
+
 h1 > span a:link {
   text-decoration: none;
   color: #fff;
