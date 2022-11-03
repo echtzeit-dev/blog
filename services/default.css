@@ -43,10 +43,15 @@ div.head div.text {
 div.top-item {
   padding-bottom: 0;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position-x: min(40px, 7%);
+  background-position-y: 50%;
+  background-size: min(80px, 13%);
 }
 div.top-item div.text {
   padding-top: min(30px, 5%);
   padding-bottom: min(30px, 5%);
+  padding-left: min(150px, 25%);
 }
 div.text {
   max-width: unset;
@@ -77,12 +82,17 @@ div.motto {
 
 div#expertise {
   background-color: aliceblue;
+  background-image: url('../img/icon-expertise.png');
+  background-position-x: min(30px, 5%);
+  background-size: min(100px, 16%);
 }
 
 div#how-it-works {
   background-color: cornsilk;
+  background-image: url('../img/icon-plan.png');
 }
 
 div#contact {
-  background-color: #d0fbcd;
+  background-color: #daf9d8;
+  background-image: url('../img/icon-email.png');
 }
