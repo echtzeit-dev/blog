@@ -14,7 +14,7 @@ div.page {
 }
 
 div.nav {
-  padding-top: min(30px, max(0px, calc((100vw - 1024px) / 2)));
+  padding-top: min(30px, 5%);
 }
 h1 > span.level1 {
   background-image: linear-gradient(125deg, #36A15C 50%, #b538e2 50%);
