@@ -15,8 +15,8 @@ div.news {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: min(15px, 2.5%);
-  padding-bottom: min(45px, 7.5%);
+  margin: min(30px, 5%) auto;
+  padding-bottom: min(30px, 5%);
 }
 a.news-item {
   display: block;
@@ -87,20 +87,25 @@ a.news-item a:active .link {
   color: #0c72a1;
 }
 
-div.contact {
+div.contact > div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: min(30px, 5%);
 }
-div.contact > div {
+div.contact > div > div {
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
-div.contact > img {
+div.contact > div > img {
   width: 6em;
   height: 6em;
   margin: 0 1em 0 0;
   border-radius: 3em;
+  margin-left: min(30px, 5%);
+}
+
+div.imprint div.content {
+  padding-left: min(30px, 5%);
+  padding-right: min(30px, 5%);
 }

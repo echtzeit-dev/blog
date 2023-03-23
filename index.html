@@ -9,12 +9,36 @@
   <link  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="base.css" rel="stylesheet">
   <link href="default.css" rel="stylesheet">
+  <script language="JavaScript" type="text/javascript">
+    if (window.location.host == "weliveindetail.github.io" && window.location.protocol != "https:") {
+      window.location.protocol = "https:";
+    }
+
+    function decode(a, shift) {
+      return a.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + shift) ? c : c - 26);
+      })
+    };
+    function encode(a, shift) {
+      return a.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c >= "a" ? 97 : 65) <= (c = c.charCodeAt(0) - shift) ? c : c + 26);
+      })
+    };
+    function openMailer(element) {
+      var y = decode("hvdgoj", 5) + ":" +
+              decode("fgrsna.tenravgm", 13) + "@" +
+              decode("pvjru.lxv", 17);
+
+      element.setAttribute("href", y);
+      element.setAttribute("onclick", "");
+    };
+  </script>
 </head>
 <body>
-  <h1>
-    <span><a href=".">echtzeit.dev</a></span>
-  </h1>
   <div class="section main">
+    <h1>
+      <span><a href=".">echtzeit.dev</a></span>
+    </h1>
     <div class="top-item services">
       <div class="motto">
         <span>Solid</span><br>
@@ -44,8 +68,8 @@
     </div>
   </div>
 
-  <h1><span>News</span></h1>
   <div class="section news">
+    <h1><span>News</span></h1>
     <a class="news-item" href="#">
       <div class="date">
         Thu, 26 May 2022
@@ -78,17 +102,25 @@
     </a>
   </div>
 
-  <h1><span>Contact</span></h1>
-  <div class="contact">
-    <img src="img/contact-sgraenitz.jpg" alt="photo">
+  <div class="section contact">
+    <h1><span>Contact</span></h1>
     <div>
-      Stefan Gränitz<br>
-      <a target="_blank" href="https://www.linkedin.com/in/sgraenitz">
-          https://www.linkedin.com/in/sgraenitz
-      </a>
-      <a target="_blank" href="https://weliveindetail.github.io/blog">
-        https://weliveindetail.github.io/blog
-      </a>
+      <img src="img/contact-sgraenitz.jpg" alt="photo">
+      <div>
+        Stefan Gränitz<br>
+        <span>
+          <a href="click:the.address.will.be.decrypted.by.javascript" onclick="openMailer(this);">E-Mail</a> |
+          <a href="https://weliveindetail.github.io/blog" target="_blank">Blog</a> |
+          <a href="https://github.com/weliveindetail" target="_blank">GitHub</a> |
+          <a href="https://reviews.llvm.org/p/sgraenitz/" target="_blank">LLVM Reviews</a>
+        </span>
+        <span>
+          <a href="https://www.linkedin.com/in/sgraenitz" target="_blank">LinkedIn</a> |
+          <a href="https://berlin.social/@weliveindetail/" target="_blank">Mastodon</a> |
+          <a href="https://twitter.com/weliveindetail" target="_blank">Twitter</a> |
+          <a href="imprint.html">Impressum</a>
+        </span>
+      </div>
     </div>
   </div>
 </body>

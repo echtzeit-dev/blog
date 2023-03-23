@@ -5,6 +5,7 @@ body {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 16px;
   color: #1A1818;
+  background: #eee;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h1 {
   font-size: 16px;
   font-style: normal;
   background: #d6eed4;
+  margin-bottom: min(30px, 5%);
 }
 h1 > span {
   padding: 5px 40px 5px min(30px, 5%);
@@ -72,7 +74,10 @@ a:active {
 }
 
 div.section {
-  padding-top: min(45px, 7.5%);
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 15px #ccc;
 }
 div.section:last-of-type {
   padding-bottom: min(45px, 7.5%);
@@ -86,7 +91,8 @@ div.text {
 div.top-item {
   display: flex;
   flex-direction: column;
-  padding-bottom: min(60px, 10%);
+  padding-top: min(15px, 2.5%);
+  padding-bottom: min(30px, 5%);
   margin: 0;
 }
 div.top-item > a:link {
